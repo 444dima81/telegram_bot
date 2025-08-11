@@ -14,6 +14,7 @@ cd my_bot # зайти в папку
 Открой командную строку 
 
 docker build -t telegram_translit_bot . # построение образа 
+
 docker run -d --name telegram_translit_bot --env-file .env telegram_translit_bot # запуск контейнера
 
 
@@ -25,4 +26,5 @@ docker logs -f telegram_translit_bot
 
 ### 6. Остановка бота
 docker stop telegram_translit_bot # Остановка
+
 docker rm telegram_translit_bot # удаление контейнера
