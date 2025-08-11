@@ -1,9 +1,9 @@
 ## Как запустить бота:
 ### 1. Клонируй репозиторий 
 
-git clone git@github.com:444dima81/telegram_bot.git
+- git clone git@github.com:444dima81/telegram_bot.git
 
-cd my_bot # зайти в папку
+- cd my_bot # зайти в папку
 
 
 ### 2. Вставь свой токен в строку
@@ -15,9 +15,9 @@ cd my_bot # зайти в папку
 ### 3. Собери и запусти
 Открой командную строку 
 
-docker build -t telegram_translit_bot . # построение образа 
+- docker build -t telegram_translit_bot . # построение образа 
 
-docker run -d --name telegram_translit_bot --env-file .env telegram_translit_bot # запуск контейнера
+- docker run -d --name telegram_translit_bot --env-file .env telegram_translit_bot # запуск контейнера
 
 
 ### 4. Проверьте бота
@@ -27,6 +27,6 @@ docker run -d --name telegram_translit_bot --env-file .env telegram_translit_bot
 docker logs -f telegram_translit_bot
 
 ### 6. Остановка бота
-docker stop telegram_translit_bot # Остановка
+- docker stop telegram_translit_bot # Остановка
 
-docker rm telegram_translit_bot # удаление контейнера
+- docker rm telegram_translit_bot # удаление контейнера
